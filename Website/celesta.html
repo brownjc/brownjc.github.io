@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+	  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="js/script.js" defer></script>
+    <title>Jacob Brown Portfolio - Celesta</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li><a href="celesta.html">Celesta</a></li>
+		<li><a href="cad.html">CAD/Engineering</a></li>
+        <li><a href="dig-art.html">Digital Art</a></li>
+        <li><a href="data.html">Data Analytics</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+
+        <li class="mobile-only"><a href="celesta.html">Celesta</a></li>
+        <li class="mobile-only">
+          <a href="cad.html">CAD/Engineering</a>
+        </li>
+        <li class="mobile-only"><a href="dig-art.html">Digital Art</a></li>
+		  <li class="mobile-only"><a href="data.html">Data Analytics</a></li>
+        <li class="mobile-only"><a href="about-me.html">About Me</a></li>
+      </ul>
+    </div>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/signature.png" alt="Jacob Brown" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="celesta.html">Celesta</a></li>
+          <li><a href="cad.html">CAD/Engineering</a></li>
+          <li><a href="dig-art.html">Digital Art</a></li>
+          <li><a href="data.html">Data Analytics</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+
+	  
+    <section class="section-animate bg-falcon-9"></section>
+    <div class="section-inner-center">
+      <h3>Celesta Orbital Solutions</h3>
+      <p>Launching Boundless Horizons</p>
+    </div>
+
+	<br></br>  
+    <div class="stats">
+      <div>
+        <span class="counter" data-target="3.1">0</span>
+        <h4>∆v (km/s)</h4>
+      </div>
+      <div>
+        <span class="counter" data-target="5.7">0</span>
+        <h4>Tons to LEO</h4>
+      </div>
+      <div>
+        <span class="counter" data-target="1.4">0</span>
+        <h4>Tons to GTO</h4>
+      </div>
+    </div>
+	<br></br>  
+
+	  
+	  
+	  
+  <!-- Swiper -->
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Overview</div>
+      <div class="swiper-slide">First Stage</div>
+      <div class="swiper-slide">Second Stage</div>
+      <div class="swiper-slide">Payload</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+	  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>	  
+	  
+    <footer>
+      <ul>
+        <li>Jacob Brown 2023</li>
+        <li><img src="img/indeed.webp"><a href="https://profile.indeed.com/p/jacobb-gxtqgnw"> Indeed</a></li>
+        <li><img src="img/LinkedIn.webp"><a href="https://www.linkedin.com/in/jacob-brown-74b280159/"> LinkedIn</a></li>
+        <li><img src="img/Gmail.webp"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=acc.brownjc053@gmail.com"> Gmail</a></li>
+	<li>Jacob Brown 2023</li>
+      </ul>
+    </footer>
+
+
+
+  </body>
+</html>
